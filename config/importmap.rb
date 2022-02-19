@@ -18,5 +18,6 @@ pin "@rails/actiontext", to: "actiontext.js"
 
 pin 'md5', to: 'https://cdn.skypack.dev/md5'
 pin "vue", to: 'https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.esm.browser.js'
+pin "d3", to: 'https://esm.sh/d3?bundle' # esm.sh is able to bundle libraries (if you pass?bundle) that have a lot of dependencies/components, like d3
 
 pin "application", preload: true

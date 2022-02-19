@@ -8,4 +8,7 @@ import "trix"
 import "@rails/actiontext"
 
 import "components/vue_components"
+import "components/d3_component"
+
+
 
