@@ -16,8 +16,13 @@ pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.2/lib/inde
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.js"
 
+pin "application", preload: true
+
 pin 'md5', to: 'https://cdn.skypack.dev/md5'
 pin "vue", to: 'https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.esm.browser.js'
 pin "d3", to: 'https://esm.sh/d3?bundle' # esm.sh is able to bundle libraries (if you pass?bundle) that have a lot of dependencies/components, like d3
 
-pin "application", preload: true
+pin "react", to: 'https://cdn.skypack.dev/react'
+pin "react-dom", to: 'https://cdn.skypack.dev/react-dom'
+
+
