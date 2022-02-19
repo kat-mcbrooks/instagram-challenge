@@ -13,3 +13,5 @@ pin "@popperjs/core", to: "https://ga.jspm.io/npm:@popperjs/core@2.11.2/lib/inde
 
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.js"
+
+pin 'md5', to: 'https://cdn.skypack.dev/md5'
