@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDom from "react-dom"
+// nb react without jsx because jsx requires compiling
 
 const e = React.createElement
 

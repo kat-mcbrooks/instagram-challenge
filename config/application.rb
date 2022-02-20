@@ -17,6 +17,9 @@ module InstagramChallenge
       g.test_framework :rspec
       g.integration_tool :rspec
     end
+
+    # Use Vips for processing variants.
+  config.active_storage.variant_processor = :vips
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

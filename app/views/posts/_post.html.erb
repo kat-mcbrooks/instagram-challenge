@@ -4,4 +4,16 @@
     <%= post.content %>
   </p>
 
+  <% if post.image.attached? %>
+  <strong>Image:</strong>
+      <%= image_tag post.image %>
+  <% end %>
+  
+  <% if post.images.attached? %>
+    <strong>Images:</strong>
+    <% post.images.each do |image| %>
+      <%= image_tag image.variant(resize_to_limit: [100, 100]) %>
+    <% end %>
+  <% end %>
+
 </div>

@@ -35,8 +35,8 @@ end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   #config.fixture_path = "#{::Rails.root}/spec/fixtures"
-  #instead, we use factorygirl. Then we place all of our factoris in the spec/factories directory
-  config.include FactoryGirl::Syntax::Methods
+  #instead, we use factorybot. Then we place all of our factoris in the spec/factories directory
+  config.include FactoryBot::Syntax::Methods
 
   # Because our app will use devise for authentication, we add the below. This gives helper methods like sign_in
   config.include Devise::Test::ControllerHelpers, type: :controller 

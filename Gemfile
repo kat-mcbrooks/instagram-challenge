@@ -52,12 +52,16 @@ gem 'jquery-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
+# can use vips or imagemagick
+gem "ruby-vips" 
+gem 'google-cloud-storage'
+gem 'dotenv-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails', '~> 5.0.0'
-  gem 'factory_girl_rails' #replaces Rails fixtures for generating data to use in the tests.
+  gem 'factory_bot_rails' #replaces Rails fixtures for generating data to use in the tests.
   gem "database_cleaner" #to help hold things together and ensure a clean state during tests.
   gem "capybara"
   gem "selenium-webdriver"
