@@ -15,11 +15,11 @@ local:
 #   bucket: your_own_bucket-<%= Rails.env %>
 
 
-google:
-  service: GCS
-  credentials: <%= Rails.root.join("google-keyfile.json") %>
-  project: "instagram-clone-makers"
-  bucket: "insta22"
+# google:
+#   service: GCS
+#   credentials: <%= Rails.root.join("google-keyfile.json") %>
+#   project: "instagram-clone-makers"
+#   bucket: "insta22"
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
