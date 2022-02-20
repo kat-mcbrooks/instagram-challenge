@@ -1,0 +1,22 @@
+<div class="user-wrapper">
+  <div class="avatar">
+    <% if current_user.avatar.attached? %>
+      <%= image_tag current_user.avatar, class: "profile-img" %>
+      <% end %>
+  </div>
+  <!-- USER NAME -->
+  <div class="user-details">
+    <h5>
+      <a href="<%= user_path(current_user.id) %>">
+        <%= current_user.first_name%>'s profile page
+      </a>
+    </h5>
+        <%= link_to "Edit Profile", edit_user_registration_path(current_user), class:"post-btn" %>
+  </div>
+</div>
+
+
+<h3>Cancel my account</h3>
+
+<p> <%= button_to "Cancel my account", user_registration_path(current_user), data: { confirm: "Are you sure?" },  'data-turbo-method': :delete %></p>
+
