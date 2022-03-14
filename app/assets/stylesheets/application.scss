@@ -2,15 +2,19 @@
 @import "./actiontext.css";
 
 * {
-  font-family: 'Open Sans', sans-serif;
- }
+  font-family: "Open Sans", sans-serif;
+}
+
+$body-bg: #212f3d;
 
 .filter-grey {
-filter: invert(13%) sepia(17%) saturate(1361%) hue-rotate(168deg) brightness(93%) contrast(87%);
+  filter: invert(13%) sepia(17%) saturate(1361%) hue-rotate(168deg)
+    brightness(93%) contrast(87%);
 }
+
 .header {
   font-size: 36px;
-  color: #212F3D;
+  color: #212f3d;
   font-weight: 900;
   margin-bottom: 0em;
   margin-top: 0.25em;
@@ -18,10 +22,9 @@ filter: invert(13%) sepia(17%) saturate(1361%) hue-rotate(168deg) brightness(93%
 
 .navlink {
   text-decoration: none;
-  color: #212F3D;
+  color: #212f3d;
   align-items: right;
   margin-right: 2.5em;
   font-weight: 900;
   font-size: 20px;
 }
-

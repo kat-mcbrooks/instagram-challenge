@@ -33,3 +33,4 @@
 .env
 
 /google-keyfile.json
+tmp/cache/*
