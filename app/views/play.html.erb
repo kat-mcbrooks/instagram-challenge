@@ -1,0 +1,23 @@
+<div data-controller='hello'></div> 
+<div data-controller='utilities--md5'>
+  <%= link_to 'hash this!', '#', 'data-action': 'utilities--md5#convert' %> <! -- references the md5 file and calls its convert action -->
+</div> 
+
+<! -- found the below code snippets here: https://v2.vuejs.org/v2/guide/. They work with the vue_components.js file -->
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<div id='react'></div>
+
+<! -- below is not working. not sure why, something to do with d3 -->
+  <svg width="300" height="200"></svg>

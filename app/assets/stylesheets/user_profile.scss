@@ -1,0 +1,33 @@
+
+
+.user-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px;
+  text-align: left;
+  .profile-img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+  .user-details {
+    a {
+      font-size: 1.5em;
+      color: #001852;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+    .post-btn {
+      background-color: #fd8379;
+      margin-left: 0;
+      color: white;
+      font-size: 10pt;
+    }
+    .post-btn:hover {
+      background-color: #001852;
+      margin-left: 0;
+    }
+  }
+}
