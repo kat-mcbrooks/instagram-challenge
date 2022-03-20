@@ -21,4 +21,17 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+For linting, you can use the `.rubocop.yml` in this repository (or your own!).
+You'll need these gems:
+
+```ruby
+group :development, :test do
+  gem 'rubocop', '1.20', require: false
+  gem 'rubocop-rails'
+end
+```
+
+You can also lint Javascript, CSS, and ERB — feel free to research this. These
+will help you to train yourself to produce cleaner code — and will often alert
+you to mistakes or mishaps!
+
